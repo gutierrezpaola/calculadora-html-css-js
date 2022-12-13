@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container-main {
+.main-container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -13,77 +13,67 @@
 }
 
 .calculator-container {
-    width: 380px;
-    height: 456px;
-    border: 2px rgb(221, 221, 221) solid;
-    border-radius: 6px;
-}
-
-.calculator-header {
-    height: 60px;
-    background-color: rgb(221, 221, 221);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    ;
-}
-
-.title-side {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.title-side img {
-    width: 50px;
-}
-.title-side h1 {
-    color: gray;
-}
-
-.calculator-body {
-    padding: 5px;
+    width: 330px;
+    height: 490px;
+    border-radius: 30px;
+    background-color: #303943;
+    overflow: hidden;
+    border: solid 1px rgb(209, 209, 209);
+    box-shadow: 15px 10px 0px 5px #c9c9c933;
 }
 
 .calculator-screen {
-    border: 1px solid rgb(224, 224, 224);
-    height: 80px;
+    height: 90px;
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 0 5px;
-    overflow: hidden;
-    margin: 0 6px;
-}
-
-.calculator-buttons {
-    width: 100%;
-    height: 100%;
-    padding: 5px;
+    color: white;
+    border-bottom: 1px solid rgb(177, 177, 177);
+    font-size: 40px;
+    margin: 10px;
 }
 
 .rows {
     margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
 }
 
-.rows button {
-    width: 86px;
-    height: 54px;
-    font-size: 16px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(207, 207, 207);
-    border-radius: 4px;
+button {
+    width: 68px;
+    height: 68px;
+    font-size: 24px;
+    border-radius: 20px;
     cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 10px -3px #4b392f40, -5px -5px 15px 3px #d8d5d31f;
+    color: white;
 }
 
-.rows .button-equal {
+.btn-equal {
+    position: static;
+    height: 140px;
+}
+
+.btn-zero {
+    top: -70px;
+    left: 14px;
     position: absolute;
-    height: 112px;
-    margin-left: 4px;
-}
-.rows .button-zero {
-    width: 176px;
+    width: 142px;
 }
 
+.btn-point {
+    position: absolute;
+    top: -70px;
+    right: 92px;
+}
 
+.orange {
+    background-color: #c36011;
+}
+
+.gray {
+    background-color: #2a303e;
+}

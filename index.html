@@ -10,51 +10,41 @@
 </head>
 
 <body>
-    <main class="container-main">
+    <main class="main-container">
         <div class="calculator-container">
-            <header>
-                <div class="calculator-header">
-                    <div class="title-side">
-                        <img src="https://img.icons8.com/carbon-copy/100/null/calculator.png" />
-                        <h1>Calculator</h1>
-                    </div>
-                </div>
-            </header>
-            <main class="calculator-body">
-                <div class="calculator-screen">
-                    <h1 id="screen">0</h1>
-                </div>
-                <div class="calculator-buttons">
+            <div class="calculator-screen">
+                <span id="screen">0</span>
+            </div>
+            <div>
                 <section class="rows">
-                    <button onclick="reset()">C</button>
-                    <button onclick="changeOperation('/')">÷</button>
-                    <button onclick="changeOperation('*')">x</button>
-                    <button onclick="reset()">AC</button>
+                    <button class="gray" onclick="reset()">C</button>
+                    <button class="gray" onclick="changeOperation('/')">÷</button>
+                    <button class="gray" onclick="changeOperation('*')">x</button>
+                    <button class="orange" onclick="reset()">AC</button>
                 </section>
                 <section class="rows">
-                    <button onclick="changeNumber(7)">7</button>
-                    <button onclick="changeNumber(8)">8</button>
-                    <button onclick="changeNumber(9)">9</button>
-                    <button onclick="changeOperation('-')">-</button>
+                    <button class="gray" onclick="changeNumber(7)">7</button>
+                    <button class="gray" onclick="changeNumber(8)">8</button>
+                    <button class="gray" onclick="changeNumber(9)">9</button>
+                    <button class="orange" onclick="changeOperation('-')">-</button>
                 </section>
                 <section class="rows">
-                    <button onclick="changeNumber(4)">4</button>
-                    <button onclick="changeNumber(5)">5</button>
-                    <button onclick="changeNumber(6)">6</button>
-                    <button onclick="changeOperation('+')">+</button>
+                    <button class="gray" onclick="changeNumber(4)">4</button>
+                    <button class="gray" onclick="changeNumber(5)">5</button>
+                    <button class="gray" onclick="changeNumber(6)">6</button>
+                    <button class="orange" onclick="changeOperation('+')">+</button>
                 </section>
                 <section class="rows">
-                    <button onclick="changeNumber(1)">1</button>
-                    <button onclick="changeNumber(2)">2</button>
-                    <button onclick="changeNumber(3)">3</button>
-                    <button onclick="changeOperation('=')" class="button-equal">=</button>
+                    <button class="gray" onclick="changeNumber(1)">1</button>
+                    <button class="gray" onclick="changeNumber(2)">2</button>
+                    <button class="gray" onclick="changeNumber(3)">3</button>
+                    <button onclick="changeOperation('=')" class="btn-equal orange">=</button>
                 </section>
                 <section class="rows">
-                    <button onclick="changeNumber(0)" class="button-zero">0</button>
-                    <button onclick="changeNumber('.')">.</button>
+                    <button onclick="changeNumber(0)" class="btn-zero gray">0</button>
+                    <button class="btn-point gray" onclick="changeNumber('.')">.</button>
                 </section>
             </div>
-            </main>
         </div>
     </main>
 
